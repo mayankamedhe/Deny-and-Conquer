@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <script src="../lib/client/loginControl.js"></script>
+        <style>
+            p,
+            label {
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+
+            input {
+                margin: .4rem;
+            }
+            .button {
+                height:10px;
+                width:200px;
+                padding: 20px 10px;
+              
+            }
+        </style>
+    </head>
+    <body>
+
+        <div>
+                Choose board size:
+        </div>
+
+
+
+        <div>
+                <input type="radio" id="board4" name="boardsize" value="4" checked>
+                <label for="4">4x4</label>
+
+
+                <input type="radio" id="board6" name="boardsize" value="6">
+                <label for="6">6x6</label>
+
+                <input type="radio" id="board8" name="boardsize" value="8">
+                <label for="8">8x8</label>
+        </div>
+
+
+        <div>
+                Choose pen thickness:
+        </div>
+
+
+
+        <div>
+                <input type="radio" id="pen3" name="penThickness" value="3" checked>
+                <label for="dewey">3</label>
+
+
+                <input type="radio" id="pen4" name="penThickness" value="4">
+                <label for="louie">4</label>
+
+                <input type="radio" id="pen5" name="penThickness" value="5">
+                <label for="louie">5</label>
+        </div>
+
+
+        <div>
+                Choose filling threshold:
+        </div>
+
+
+
+        <div>
+                <input type="radio" id="fill30" name="fillingPercentage" value="0.3" checked>
+                <label for="dewey">30%</label>
+
+
+                <input type="radio" id="fill40" name="fillingPercentage" value="0.4">
+                <label for="louie">40%</label>
+
+                <input type="radio" id="fill50" name="fillingPercentage" value="0.5">
+                <label for="louie">50%</label>
+        </div>
+
+        <br><br>
+        <div>
+                <input type="button" class="button" value="Become host - create a server."
+                 onclick="createServer()">
+            </div>
+            <br><br>
+             
+            <div>
+                    IP to connect to:
+                    <input type="text" id="inputIpToConnect">
+                    <input type="button" value="Connect" onclick="setUpClient()">
+            </div> 
+              
+            
+
+    </body>
+</html>

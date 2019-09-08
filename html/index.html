@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="../lib/udp/mainUdp.js"></script>
+
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        We are using node <script>document.write(process.versions.node)</script>,
+        Chrome <script>document.write(process.versions.chrome)</script>,
+        and Electron <script>document.write(process.versions.electron)</script>.
+
+        <div>
+            IP to connect to:
+            <input type="text" id="inputIpToConnect">
+            <input type="button" value="Connect" onclick="connectToIp()">
+            <input type="button" value="CreateServer" onclick="createServer()">
+        </div>
+
+
+
+  <canvas id="canvas" width="256" height="512" style="background-color: white">
+        Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+    </body>
+</html>

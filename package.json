@@ -1,0 +1,50 @@
+{
+  "name": "cmpt431finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.js",
+  "scripts": {
+    "start": "make; electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jerald/cmpt431finalproject.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jerald/cmpt431finalproject/issues"
+  },
+  "homepage": "https://github.com/Jerald/cmpt431finalproject#readme",
+  "dependencies": {
+    "color": "^3.1.0",
+    "fabric": "^2.7.0",
+    "jquery": "^3.3.1",
+    "p5": "^0.7.3",
+    "package.json": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-private-methods": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "electron": "^4.0.8"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-private-methods"
+    ],
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "electron": "4.0.8"
+          }
+        }
+      ]
+    ]
+  }
+}
